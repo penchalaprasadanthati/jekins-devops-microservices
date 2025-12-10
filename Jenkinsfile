@@ -7,9 +7,10 @@ pipeline {
 	}
 
 	stages{
+		
 		stage('Checkout') {
 			steps {
-							
+				sh 'maven --version'			
 			}			
 		}
 
