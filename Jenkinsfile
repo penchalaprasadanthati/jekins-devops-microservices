@@ -11,6 +11,8 @@ pipeline {
 				sh 'docker version'
 				sh 'maven --version'
 				echo "Build"
+				echo "path - $PATH"
+				echo "build tag - $env.BUILD_TAG"
 			}			
 		}
 		stage('Test'){
