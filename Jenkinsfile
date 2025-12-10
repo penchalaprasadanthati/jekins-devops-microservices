@@ -8,6 +8,8 @@ pipeline {
 	stages{
 		stage('Build'){
 			steps{
+				sh 'docker version'
+				sh 'maven --version'
 				echo "Build"
 			}			
 		}
